@@ -10,22 +10,6 @@
     $conecta = new mysqli($nome_servidor, $nome_usuario, $senha,$banco); 
         
     
-    /*/cria banco
-    $sql = "CREATE DATABASE cadastro";  
-   
-       if ($conecta->query($sql) === TRUE) { 
-             echo "Banco de dados criado com sucesso<br>";     
-   }    else{     
-            echo "Erro na criação do banco de dados: " . $conecta->error."<br>";    
-            }
-            //cria tabela
-            $sql = "CREATE TABLE cliente (nome VARCHAR(100) NOT NULL,  email VARCHAR(50) NOT NULL,  cpf INT(12) NOT NULL, telefone   VARCHAR(15) NOT NULL,  cidade VARCHAR(50) NOT NULL, cep VARCHAR(15) NOT NULL, logradouro VARCHAR(100) NOT NULL, numero INT (5) NOT NULL )";    
-             if ($conecta->query($sql) === TRUE) {  
-                       echo "Tabela cliente criada com sucesso<br>";   
-                 } else {  
-                       echo "Erro na criação da tabela cliente: " . $conecta->error."<br>";   
-                        }  
-                        */
                         include "getform.php";
                          $pegadados = new SalvaDado();
                          $endereco = $pegadados-> enderecoPorCep();

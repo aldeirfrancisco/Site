@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/estilo.css" />
         <link rel="stylesheet" type="text/css" href="css/estilomenu.css" />
         <script type="text/javascript" src="javascript/script.js"></script>
+        <script type="text/javascript" src="javascript/validaCampo.js"></script>
+        <script type="text/javascript" src="javascript/viaCep.js"></script>
     </head>
     <body>
         <form name="validaheader" class="header" method="$_POST" action="caluloDiaria.php">
@@ -41,9 +43,9 @@ function myFunction() {
             <div id="ul">
                 <input type="button" class="menuButton" onclick="acao('ma','mab')" value="Cadastro Usuário"/>
                 <div>
-      <form name="form" id="ma" class="hidden" onSubmit="return validacao();">
+      <form name="form" id="ma" class="hidden" onSubmit="return validacao();" action="dados.php" method="$_GET">
         
-                 <input  name="nome" type="text" placeholder="               Nome"/>
+                 <input  name="nome"  type="text" placeholder="               Nome" />
         
                  <input name="email" type="email" name="email"placeholder="               E-mail" />
             
@@ -51,15 +53,17 @@ function myFunction() {
             
                  <input name="telefone"  type="text" name="telefone" placeholder="               Telefone" />
             
-                 <input name="cep"  type="text" name="telefone" placeholder="               CEP" />
-                 
-                 <input name="bairro"  type="text" name="bairro" placeholder="               Bairro" />
-            
-                 <input name="lograduoro"  type="text" name="logradouro"  placeholder="               Logradouro"/>
-            
-                 <input name="numero"  type="text" name="numero" placeholder="               Número" />
+                 <input name="cep"  type="text" name="telefone" placeholder="               CEP" id= "cep" onblur="pesquisacep(this.value);"/>
                 
-                 <input style=" display: ;" class="menuButton"type="submit" name="enviar" value="Enviar"/>
+                 <input name="cidade"  type="text" name="bairro" placeholder="               Cidade"id="cidade" />
+                
+                 <input name="bairro"  type="text" name="bairro" placeholder="               Bairro"id="bairro" />
+            
+                 <input name="lograduoro"  type="text" name="logradouro"  placeholder="               Logradouro" id="rua"/>
+            
+                 <input name="numero"  type="number" name="numero" placeholder="               Número" />
+                
+                 <input style=" display: ;" class="menuButton"type="submit" name="enviar" />
                 </form>
        <form id="mab"  class="hidde">
         <input type="button" class="menuButton" onclick=" acaoFotos('ma','mab')" value="Fotos"/>
