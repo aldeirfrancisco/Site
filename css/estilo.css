@@ -2,7 +2,7 @@
 
     background-color: #f1f1f1;
     padding: 30px;
-   margin-left: 200px;
+ text-align: center;
     font-size: 35px;
   }
 .sidenav {
@@ -19,11 +19,12 @@
     margin-left: 200px;
     padding-left: 20px;
   }
-  #in_pessoas{
-    width: 70px;
-    height: 25px;
-  }
+ 
   .in_date{
     width: 125px;
+    height: 25px;
+  }
+  .upda{
+    width: 70px;
     height: 25px;
   }
