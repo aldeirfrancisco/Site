@@ -12,6 +12,7 @@
     </head>
     <body>
         <form name="validaheader" class="header" method="$_POST" action="caluloDiaria.php">
+            <div id="check">
             Pessoas
             <input class="in_date" type="text" id="myInput" placeholder="0 pessoas" oninput="myFunction()">
             check-in
@@ -31,7 +32,7 @@ function myFunction() {
                  document.getElementById("demo").innerHTML =   a ;
 }
 </script>
-     
+</div>
         </form>
 
         <div class="sidenav">
@@ -41,9 +42,9 @@ function myFunction() {
          </label>
         <nav >
             <div id="ul">
-                <input type="button" class="menuButton" onclick="acao('ma','mab')" value="Cadastro Usuário"/>
+                <input type="button" class="menuButton" onclick="acao('cadast','foto','inf')" value="Cadastro Usuário"/>
                 <div>
-      <form name="form" id="ma" class="hidden" onSubmit="return validacao();" action="dados.php" method="$_GET">
+      <form name="form" id="cadast" class="hidden" onSubmit="return validacao();" action="dados.php" method="$_GET">
         
                  <input  name="nome"  type="text" placeholder="               Nome" />
         
@@ -65,11 +66,11 @@ function myFunction() {
                 
                  <input style=" display: ;" class="menuButton"type="submit" name="enviar" />
                 </form>
-       <form id="mab"  class="hidde">
-        <input type="button" class="menuButton" onclick=" acaoFotos('ma','mab')" value="Fotos"/>
-       </form>
-            <div >
-                <input type="button" class="menuButton" value="Informacoes"/>
+       <div id="foto"  class="hidde">
+        <input type="button" class="menuButton" onclick=" acaoFotos('inf','foto','cadast')" value="Fotos"/>
+       </div>
+            <div id="inf" >
+                <input type="button" class="menuButton" onclick="acaoInformacao('inf','foto','cadast')" value="Informacoes"/>
                 <div>
          </div>
       </div> 

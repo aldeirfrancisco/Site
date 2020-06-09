@@ -20,16 +20,17 @@ a{
   
 }
 img{
-    width: 40px;
+    width: 60px;
+    margin-left: 20px;
   
 }
 input[type="checkbox"] {
  display: none;
 }
 nav{
-    width: 250px;
+    width: 300px;
     height: 100%;
-    left: -250px;
+    left: -300px;
     position: absolute;
     transition: all .5s;
     background-color: rgba(16, 16,16,.5);
@@ -46,7 +47,7 @@ label{
 }
 input[type="checkbox"]:checked ~ nav {
   
-    transform: translateX(250px);
+    transform: translateX(300px);
    }
 .hidden{
     display: none;
@@ -59,19 +60,19 @@ input[type="checkbox"]:checked ~ nav {
 }
 .menuButton{
     
-    width: 70%;
-    height: 20px;
-    padding: 14px 5px;
-    margin: 8px 10px;
+    width: 75%;
+    height: 30px;
+    padding: 14px 10px;
+    margin: 8px 25px;
   
     text-align: center;
    
 }
 form input{
-    width: 70%;
-    height: 20px;
-    padding: 14px 5px;
-    margin: 8px 10px;
+    width: 75%;
+    height: 30px;
+    padding: 14px 10px;
+    margin: 8px 25px;
     box-sizing: border-box;
 }
 
