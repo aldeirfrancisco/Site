@@ -38,8 +38,12 @@ function myFunction() {
         <div class="sidenav">
             <input type="checkbox" id="chec"/>
          <label for="chec">
-             <img src="imagens/riscoimagen.png"/>
+             <img id="risco" src="imagens/riscoimagen.png"/>
          </label>
+          
+         
+</form>
+          
         <nav >
             <div id="ul">
                 <input type="button" class="menuButton" onclick="acao('cadast','foto','inf')" value="Cadastro Usuário"/>
@@ -64,7 +68,7 @@ function myFunction() {
             
                  <input name="numero"  type="number" name="numero" placeholder="               Número" />
                 
-                 <input style=" display: ;" class="menuButton"type="submit" name="enviar" />
+                 <input class="menuButton"type="submit" name="enviar" />
                 </form>
        <div id="foto"  class="hidde">
         <input type="button" class="menuButton" onclick=" acaoFotos('inf','foto','cadast')" value="Fotos"/>
@@ -74,18 +78,20 @@ function myFunction() {
                 <div>
          </div>
       </div> 
+      
     </nav>
-           
-        </div>
-        <div class="content">
-            <h2 style="text-align: center;margin-top: 200px;">CSS Template</h2>
-            
-            <p id="pagina"></p>
-            <script>
-                document.getElementById("pagina").innerHTML = outraFuncao();
-            </script>
-          </div>
-          
+    <iframe 
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSO45Jd8GCAAN9KoKQAbWL4G-GWifMr1Y &q=Pousada Dunas do Jalapão" allowfullscreen>
+    
+</iframe> 
+</div>
+
+
+<div class="content">
+        <h2 style="text-align: center;margin-top: 200px;">CSS Template</h2>
+    </script>
+</div>
+               
         
      </body>
 </html>
