@@ -14,9 +14,9 @@ a{
 
 }
 
-#ul{
+.ul{
     list-style: none;
-   margin-top: 80px;
+   margin-top: 0;
     position: absolute;
     width: 100%;
   
@@ -30,6 +30,7 @@ input[type="checkbox"] {
  display: none;
 }
 nav{
+    margin-top: 110px;
     width: 300px;
     height: 100%;
     left: -300px;
@@ -57,11 +58,14 @@ input[type="checkbox"]:checked ~ nav {
 .hidde{
     display: block;
 }
+.h{
+    display: none;
+}
 .input{
     display: inline;
 }
 .menuButton{
-    
+    display: block;
     width: 75%;
     height: 30px;
     padding: 14px 10px;
@@ -79,7 +83,7 @@ form input{
 }
 iframe {
     width: 295px;
-  margin-top: 110px;
+  margin-top: 98px;
   height: 600px;
 }
 

@@ -36,7 +36,7 @@ function myFunction() {
         </form>
 
  <div class="sidenav">
-            <input type="checkbox" id="chec"/>
+         <input type="checkbox" id="chec"/>
          <label for="chec">
              <img id="risco" src="imagens/riscoimagen.png"/>
          </label>
@@ -45,9 +45,22 @@ function myFunction() {
 
           
         <nav >
-            <div id="ul">
-                <input type="button" class="menuButton" onclick="acao('cadast','foto','inf')" value="Cadastro Usuário"/>
-                <div>
+        
+            
+            <div class="ul">
+               <div>
+                    <input type="button" id ="loB" class="menuButton"  onclick="acaoLogin('logi','cadastro','butfoto','inB')" value="Login"/>
+              </div>
+   
+               <form name="navlogin" id="logi" class="h">
+                    <input id="logininput" name="email" type="email" name="email"placeholder="    E-mail" />
+                    <input name="email" type="password" name="senha"placeholder="    Senha" />
+                    <input  class="menuButton"type="submit" name="enviar" />
+                </form>        
+    
+<!-- o paranetro pega o id fo form para fecha e o id do button para fechar o buton-->
+                <input type="button" id="cadastro" class="menuButton" onclick="acao('cadast','foto','infor','loB')" value="Cadastro Usuário"/>
+         
       <form name="form" id="cadast" class="hidden" onSubmit="return validacao();" action="dados.php" method="$_GET">
         
                  <input  name="nome"  type="text" placeholder="               Nome" />
@@ -67,33 +80,44 @@ function myFunction() {
                  <input name="lograduoro"  type="text" name="logradouro"  placeholder="               Logradouro" id="rua"/>
             
                  <input name="numero"  type="number" name="numero" placeholder="               Número" />
-                   <input class="menuButton"type="submit" name="enviar" />
-              </form>
-       <div id="foto"  class="hidde">
-        <input type="button" class="menuButton" onclick=" acaoFotos('inf','foto','cadast')" value="Fotos"/>
-       
-            <div id="inf" >
-                <input type="button" class="menuButton" onclick="acaoInformacao('inf','foto','cadast')" value="Informacoes"/>
-            </div>
-            
+
+             <input class="menuButton"type="submit" name="enviar" />
+        </form>
+        <div id="foto"  class="hidde">
+            <input type="button" id ="butfoto" class="menuButton" onclick=" acaoFotos('inB','foto','cadast','login')" value="Fotos"/>
+          
         </div> 
-    </nav>                
+                    <div id="infor" class="hidde" >
+                        <input type="button" id="inB" class="menuButton" onclick="acaoInformacao('inf','foto','cadast','logi')" value="Informacoes"/>
+                    </div>
+     </nav>                
     
-    <iframe
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSO45Jd8GCAAN9KoKQAbWL4G-GWifMr1Y &q=Pousada Dunas do Jalapão" allowfullscreen>
-    
-</iframe> 
+        <iframe
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSO45Jd8GCAAN9KoKQAbWL4G-GWifMr1Y &q=Pousada Dunas do Jalapão" allowfullscreen>
+        
+        </iframe> 
        
-</div>
 
-<div class="content">
-    <div>
-         <img id="fot" src="imagens/dunas.jpg"/>
-         <input >
 </div>
+    <div class="content">
       
-    </div>
-               
 
-     </body>
+    </div>
+    <div class="content">
+        
+        <div  class="fotos" >
+            <img  src="imagens/jalapa.jpg"/>
+        </div>
+
+        <div  class="fotos" >
+            <img  src="imagens/jalapa.jpg"/>
+        </div>
+
+        <div  class="fotos" >
+            <img  src="imagens/jalapa.jpg"/>
+        </div>
+        
+    </div>
+
+</body>
 </html>
