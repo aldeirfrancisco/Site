@@ -32,17 +32,17 @@ function myFunction() {
                  document.getElementById("demo").innerHTML =   a ;
 }
 </script>
-</div>
+</div >
         </form>
 
-        <div class="sidenav">
+ <div class="sidenav">
             <input type="checkbox" id="chec"/>
          <label for="chec">
              <img id="risco" src="imagens/riscoimagen.png"/>
          </label>
           
          
-</form>
+
           
         <nav >
             <div id="ul">
@@ -67,31 +67,33 @@ function myFunction() {
                  <input name="lograduoro"  type="text" name="logradouro"  placeholder="               Logradouro" id="rua"/>
             
                  <input name="numero"  type="number" name="numero" placeholder="               Número" />
-                
-                 <input class="menuButton"type="submit" name="enviar" />
-                </form>
+                   <input class="menuButton"type="submit" name="enviar" />
+              </form>
        <div id="foto"  class="hidde">
         <input type="button" class="menuButton" onclick=" acaoFotos('inf','foto','cadast')" value="Fotos"/>
-       </div>
+       
             <div id="inf" >
                 <input type="button" class="menuButton" onclick="acaoInformacao('inf','foto','cadast')" value="Informacoes"/>
-                <div>
-         </div>
-      </div> 
-      
-    </nav>
-    <iframe 
+            </div>
+            
+        </div> 
+    </nav>                
+    
+    <iframe
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSO45Jd8GCAAN9KoKQAbWL4G-GWifMr1Y &q=Pousada Dunas do Jalapão" allowfullscreen>
     
 </iframe> 
+       
 </div>
-
 
 <div class="content">
-        <h2 style="text-align: center;margin-top: 200px;">CSS Template</h2>
-    </script>
+    <div>
+         <img id="fot" src="imagens/dunas.jpg"/>
+         <input >
 </div>
+      
+    </div>
                
-        
+
      </body>
 </html>
