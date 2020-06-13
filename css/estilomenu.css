@@ -36,7 +36,7 @@ nav{
     left: -300px;
     position: absolute;
     transition: all .5s;
-    background-color: rgba(16, 16,16,.5);
+    background-color:grey;
 }
 a:hover{
     
@@ -56,8 +56,13 @@ input[type="checkbox"]:checked ~ nav {
     display: none;
 }
 .hidde{
-    display: block;
+    display: none;
+text-align: center; 
+margin-top: 20px;
+
+color:white;
 }
+
 .h{
     display: none;
 }
@@ -80,11 +85,12 @@ form input{
     padding: 14px 10px;
     margin: 8px 25px;
     box-sizing: border-box;
+   
 }
 iframe {
     width: 295px;
-  margin-top: 98px;
-  height: 600px;
+  margin-top: 110px;
+  height: 540px;
 }
 
 
