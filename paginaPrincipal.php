@@ -33,10 +33,10 @@
                 
                 $dia = new Data();
                 $valor = (50 * $dia->dias($entrada,$saida));
-                echo "<label  style=''> Pessoas: ".$pessoa.   "   /    Dias: ".$dia->dias($entrada,$saida)."  /  R$:  ".$valor."<label>";
+                echo "<label  style=''> Pessoas: ".$pessoa.   "   /    Dias: ".$dia->dias($entrada,$saida)."  /  R$:  ".number_format($valor, 2, ',', '.')."<label>";
             }
-          ?>
-  </form>
+          ?>                                                                          
+  </form>                                   
  </div >
         
         <div class="sidenav">
@@ -56,9 +56,9 @@
                     <input type="button" id ="loB" class="menuButton"  onclick="acaoLogin('logi','cadastro','inB')" value="Login"/>
                 </div>
                 
-               <form name="navlogin" id="logi" class="h">
-                   <input id="logininput" name="email" type="email" name="email"placeholder="    E-mail" />
-                   <input name="email" type="password" name="senha"placeholder="    Senha" />
+               <form name="navlogin" id="logi" class="h" onSubmit="return validacaoLogin();" action="fazLogin.php" method="$_GET">
+                   <input id="logininput" name="email"  required="true" type="email" placeholder="    E-mail" />
+                   <input name="cpf" type="password"  required="true" placeholder="    cpf" />
                     <input  class="menuButton"type="submit" name="enviar" />
                 </form>        
                 

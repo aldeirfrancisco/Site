@@ -1,8 +1,8 @@
 <?php
  session_start();
 
- $email=  $_GET['email'];
- $cpf=   $_GET['cpf'];
+ $email=  $_GET['em'];
+ $cpf=   $_GET['cp'];
 
  $Host ="sql10.freesqldatabase.com";
  $name = "sql10348173";
@@ -14,8 +14,8 @@
 $conexao =new mysqli($Host, $user,  $password,$name); 
 
 
-$tenta_achar = "SELECT * FROM usuario WHERE  cpf='$cpf'  AND email='$usuario'" ;
-$resultado = $conn->query($tenta_achar);
+$sql = "SELECT * FROM usuario WHERE  cpf='$cpf'  AND email='$email'" ;
+$resultado = $conexao->query($sql);
 if ($resultado->num_rows > 0) {
     $_SESSION['cpf'] = $cpf;
     $_SESSION['email'] = $email;
