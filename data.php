@@ -3,8 +3,7 @@
  class Data{
 
 
-
-
+//metodo a quantidade de dias para hospedar
 public function dias($data, $data1){
 $data =explode('/',$data);
 $data1 =explode('/',$data1);
@@ -19,6 +18,8 @@ return $datafina;
 }else{
   return $datafinal;
 }
+   
+
 }
 
  }

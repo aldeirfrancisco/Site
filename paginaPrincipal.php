@@ -22,7 +22,7 @@
             <input class="in_date" type="numero"   name= "saida"  placeholder="00/00/0000" /> 
             <img id="risc" src="imagens/brasil.jpg" style=" "/>
             <input  type="submit"   name= "enviar" style=" ; margin-left: 143px; margin-top: 20px;  width: 125px; height: 25px;">
-            <?php
+     <?php
             include('data.php');
             $botao = isset($_GET['enviar']);
             if($botao !=0){
@@ -35,9 +35,9 @@
                 $valor = (50 * $dia->dias($entrada,$saida));
                 echo "<label  style=''> Pessoas: ".$pessoa.   "   /    Dias: ".$dia->dias($entrada,$saida)."  /  R$:  ".$valor."<label>";
             }
-            ?>
-            </form>
-        </div >
+          ?>
+  </form>
+ </div >
         
         <div class="sidenav">
          <input type="checkbox" id="chec"/>
@@ -51,7 +51,7 @@
         <nav >
             
             
-            <div class="ul">
+  <div class="ul">
                 <div>
                     <input type="button" id ="loB" class="menuButton"  onclick="acaoLogin('logi','cadastro','inB')" value="Login"/>
                 </div>
@@ -65,27 +65,27 @@
                 <!-- o paranetro pega o id fo form para fecha e o id do button para fechar o buton-->
                 <input type="button" id="cadastro" class="menuButton" onclick="acao('cadast','inB','loB')" value="Cadastro Usuário"/>
                 
-                <form name="form" id="cadast" class="hidden" onSubmit="return validacao();" action="dados.php" method="$_GET">
+                <form name="form" id="cadast" class="hidden" onSubmit="return validacao();" action="cadastraBD.php" method="$_GET">
         
                     <input  name="nome"  type="text" placeholder="               Nome" />
         
-                    <input name="email" type="email" name="email"placeholder="               E-mail" />
+                    <input name="email" type="email"placeholder="               E-mail" />
             
-                    <input name="cpf"  type="text" name="cpf" placeholder="               CPF"/>
+                    <input name="cpf"  type="text"  placeholder="               CPF"/>
             
-                    <input name="telefone"  type="text" name="telefone" placeholder="               Telefone" />
+                    <input name="telefone"  type="text"  placeholder="               Telefone" />
+                        
+                    <input name="cep"  type="text"  placeholder="               CEP" id= "cep" onblur="pesquisacep(this.value);"/>
                     
-                 <input name="cep"  type="text" name="telefone" placeholder="               CEP" id= "cep" onblur="pesquisacep(this.value);"/>
-                 
-                 <input name="cidade"  type="text" name="bairro" placeholder="               Cidade"id="cidade" />
+                    <input name="cidade"  type="text"  placeholder="               Cidade"id="cidade" />
+                    
+                    <input name="bairro"  type="text" placeholder="               Bairro"id="bairro" />
                 
-                 <input name="bairro"  type="text" name="bairro" placeholder="               Bairro"id="bairro" />
-            
-                 <input name="lograduoro"  type="text" name="logradouro"  placeholder="               Logradouro" id="rua"/>
-                 
-                 <input name="numero"  type="number" name="numero" placeholder="               Número" />
+                    <input name="rua"  type="text"   placeholder="               Logradouro" id="rua"/>
+                    
+                    <input name="numero"  type="number" placeholder="               Número" />
 
-                 <input class="menuButton"type="submit" name="enviar" />
+                    <input class="menuButton"type="submit" name="enviar" />
         </form>
              <div >
                         <input type="button" id="inB" class="menuButton" onclick="acaoInformacao('cadastro','infor','loB')" value="Informacoes"/>
@@ -109,7 +109,7 @@
             </iframe> 
             
             
-        </div>
+</div>
         <div class="content">
                     <div id="hora">
                    <script language=javascript type="text/javascript">
