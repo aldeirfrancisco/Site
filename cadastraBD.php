@@ -22,6 +22,9 @@
    
     
     $conexao =new mysqli($Host, $user,  $password,$name); 
+    if ($conexao->connect_error) {
+      die("Conexão falhou: " . $conexao->connect_error . "<br>");
+  }
 
      $sql = "INSERT INTO usuario ( cpf,nome, email, telefone, cep, cidade, bairro, logradouro, numero)
        VALUES ( '$cpf','$nom', '$email','$telefone','$cep','$cidade','$bairro','$logradouro','$numero')";

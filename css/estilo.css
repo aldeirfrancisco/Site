@@ -108,3 +108,22 @@
   width: 500px;
 
 }
+#divdados{
+ 
+  width: 30%;
+  margin-left: 0;
+  background-color:  #666666;
+}
+
+#formid{
+  position: relative;
+  margin-top: 0;
+  margin-left: 35px;
+ 
+}
+.logado{
+  width: 60%;
+  padding: 12px ;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

@@ -56,9 +56,9 @@
                     <input type="button" id ="loB" class="menuButton"  onclick="acaoLogin('logi','cadastro','inB')" value="Login"/>
                 </div>
                 
-               <form name="navlogin" id="logi" class="h" onSubmit="return validacaoLogin();" action="fazLogin.php" method="$_GET">
+               <form name="navlogin" id="logi" class="h"  action="fazLogin.php" method="$_GET">
                    <input id="logininput" name="email"  required="true" type="email" placeholder="    E-mail" />
-                   <input name="cpf" type="password"  required="true" placeholder="    cpf" />
+                   <input name="cpf" type="password"   placeholder="  CPF: 000.000.000-00" />
                     <input  class="menuButton"type="submit" name="enviar" />
                 </form>        
                 
@@ -71,7 +71,7 @@
         
                     <input name="email" type="email"placeholder="               E-mail" />
             
-                    <input name="cpf"  type="text"  placeholder="               CPF"/>
+                    <input name="cpf"  type="text"  placeholder="         CPF: 000.000.000-00" />
             
                     <input name="telefone"  type="text"  placeholder="               Telefone" />
                         

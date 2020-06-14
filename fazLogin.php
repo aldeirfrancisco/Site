@@ -1,8 +1,8 @@
 <?php
  session_start();
 
- $email=  $_GET['em'];
- $cpf=   $_GET['cp'];
+ $email=  $_GET['email'];
+ $cpf=   $_GET['cpf'];
 
  $Host ="sql10.freesqldatabase.com";
  $name = "sql10348173";
@@ -12,15 +12,19 @@
 
 
 $conexao =new mysqli($Host, $user,  $password,$name); 
-
+if ($conexao->connect_error) {
+    die("Conexão falhou: " . $conexao->connect_error . "<br>");
+}
 
 $sql = "SELECT * FROM usuario WHERE  cpf='$cpf'  AND email='$email'" ;
 $resultado = $conexao->query($sql);
+
 if ($resultado->num_rows > 0) {
     $_SESSION['cpf'] = $cpf;
     $_SESSION['email'] = $email;
+
     echo "<script>
-            window.location.href = 'logado.html';
+            window.location.href = 'logado.php';
         </script>";
 }
 else{
